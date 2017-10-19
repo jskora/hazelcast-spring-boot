@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast xsi:schemaLocation="http://www.hazelcast.com/schema/config http://www.hazelcast.com/schema/config/hazelcast-config-3.9.xsd"
+    xmlns="http://www.hazelcast.com/schema/config"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <group>
+        <name>bootifulcluster</name>
+        <password>bootiful-pass</password>
+    </group>
+    <!-- <management-center enabled="true" update-interval="3">http://localhost:8070/mancenter</management-center> -->
+    <network>
+        <join>
+            <multicast enabled="true"/>
+        </join>
+    </network>
+    <!-- <cache name="spanishNames">
+        <statistics-enabled>true</statistics-enabled>
+        <management-enabled>true</management-enabled>
+    </cache>
+    <cache name="englishNames">
+        <statistics-enabled>true</statistics-enabled>
+        <management-enabled>true</management-enabled>
+    </cache> -->
+</hazelcast>
